@@ -6,7 +6,7 @@
 /*   By: mosborne <mosborne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 12:54:14 by mosborne          #+#    #+#             */
-/*   Updated: 2017/12/17 14:09:14 by mosborne         ###   ########.fr       */
+/*   Updated: 2017/12/18 16:50:13 by mosborne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 # define BUFF_SIZE 1
 
-int get_next_line(const int fd, char **line);
-static char *find_eof(int fd, char *buf, int *ret);
+int         get_next_line(const int fd, char **line);
+static char *read_fd(int fd, char *buf, int ret);
 
 #endif
